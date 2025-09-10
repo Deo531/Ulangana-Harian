@@ -4,18 +4,10 @@ public class Driver{
     private String subject;
     private double salary;
     private int age;
-
-    //constructor default
-    public Driver(){
-        name = "Bu Pasha";
-        subject = "Produktif RPL";
-        salary = 2000000;
-        age = 20;
-    }
     //constructor parameter
-    public Driver(String name, String city, int age, double salary){
+    public Driver(String name, String subject, int age, double salary){
         this.name = name;
-        this.subject = city;
+        this.subject = subject;
         this.age = age;
         this.salary = salary;
     }
@@ -25,7 +17,7 @@ public class Driver{
         this.name = name;
     }
     public void setCity(String city){
-        this.subject = city;
+        this.subject = subject;
     }
     public void setAge(int age){
         this.age = age;
@@ -47,7 +39,6 @@ public class Driver{
     public double getSalary(){
         return salary;
     }
-
     //method
     public void Print(){
         System.out.println("Nama Guru : " + name);
